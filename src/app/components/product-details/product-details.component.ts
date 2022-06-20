@@ -16,19 +16,4 @@ export class ProductDetailsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  openProduct(){
-
-  /*
-    const productRef = this.dialogService.open(AddProductCartComponent, {
-      data: {
-        product: this.product 
-      },
-      showHeader: false,
-      styleClass: "product-modal",
-      baseZIndex: 10000
-    });
-
-  */
-  }
-
 }
