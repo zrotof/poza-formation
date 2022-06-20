@@ -79,12 +79,37 @@ export class MenuComponent implements OnInit{
     menusArray[param]?.classList.add('active-menu');
   }
 
-  getFoodsOrDrinks(param: string){
+  getFoodsOrDrinks(param: string): Product[]{
 
-    this.productService.getProducts(param)
-      .subscribe(res =>{
-        this.plats = res;
-      });
+    if(param === 'meals'){
+      this.plats =  this.productService.getMealProducts();
+    }
+
+    if(param === 'fishes'){
+      this.plats = this.productService.getFishProducts();
+    }
+
+    if(param === 'vegetables'){
+      this.plats = this.productService.getVegetableProducts();
+    }
+
+    if(param === 'accompaniments'){
+      this.plats = this.productService.getAccompanimentProducts();
+    }
+
+    if(param === 'breakfasts'){
+      this.plats = this.productService.getBreakfastProducts();
+    }
+
+    if(param === 'drinks'){
+      this.plats = this.productService.getDrinkProducts();
+    }
+
+    if(param === 'deserts'){
+      this.plats = this.productService.getDesertProducts();
+    }
+
+    return this.plats;
       
   }
 

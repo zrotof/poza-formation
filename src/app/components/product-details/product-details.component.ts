@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { AddProductCartComponent } from '../add-product-cart/add-product-cart.component';
 import { DialogService } from 'primeng/dynamicdialog';
 
 @Component({
@@ -18,6 +17,8 @@ export class ProductDetailsComponent implements OnInit {
   }
 
   openProduct(){
+
+  /*
     const productRef = this.dialogService.open(AddProductCartComponent, {
       data: {
         product: this.product 
@@ -26,6 +27,8 @@ export class ProductDetailsComponent implements OnInit {
       styleClass: "product-modal",
       baseZIndex: 10000
     });
+
+  */
   }
 
 }

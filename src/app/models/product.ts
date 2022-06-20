@@ -8,5 +8,6 @@ export class Product {
     shortDescription?: string;
     longDescription?: string;
     ingredients?: string[];
+    accompaniments?: string[];
     combine?: boolean;
 }
