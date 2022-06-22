@@ -2,6 +2,19 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
 
+To install Angular : npm install -g @angular/cli@12.2.6
+
+Version node min to use : 12.20.1
+Verif version angular installer : ng --version
+
+Create App : ng new "nomapp"
+Lancer App : ng serve --open
+
+creer composant : ng generate composant "nomapp"
+
+
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
